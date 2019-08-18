@@ -21,8 +21,8 @@ mem = urllib.request.urlopen(url)
 print("1. type : {}".format(type(mem)))
 print("2. geturl : {}".format(mem.geturl()))  # 가져온 url주소
 print("3. status : {}".format(mem.status))  # 상태보기
-print("4. headers : {}".format(mem.getheaders()))
-print("5. getcode : {}".format(mem.getcode()))
+print("4. headers : {}".format(mem.getheaders())) # 헤더 정보 보기
+print("5. getcode : {}".format(mem.getcode())) # 코드 상태보기
 print("6. read : {}".format(mem.read(100).decode('utf-8')))  #기존에는 eucrk형태, 소스 가져오기
 print("7. parse : {}".format(urlparse('http://www.encar.co.kr?id=test&pw=1111')))  # 분리해서 보여주는 아주 중요한 함수 ★, get방식
 
